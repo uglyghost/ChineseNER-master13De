@@ -1,0 +1,13 @@
+运行方式：
+1.打开cmd
+2.在文件夹下运行命令：python Server6.py
+3.打开火狐浏览器的RESTClient（同POSTMAN）插件后 选择请求方法选择POST,然后输入http://127.0.0.1:6699，发送正文打入任意文字后 点击send
+4.而后 通过返回来的信息即可看到最后的结果
+5.结束
+
+***之前代码有一个小的问题：
+需要在data_utils中将
+
+batch_data.append(self.pad_data(sorted_data[i*batch_size : (i+1)*batch_size]))
+换为：
+ batch_data.append(self.pad_data(sorted_data[int(i*batch_size) : int((i+1)*batch_size)]))

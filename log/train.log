@@ -1,0 +1,99 @@
+2018-08-12 16:33:27,410 - log/train.log - INFO - num_chars      :	4412
+2018-08-12 16:33:27,411 - log/train.log - INFO - char_dim       :	100
+2018-08-12 16:33:27,411 - log/train.log - INFO - num_tags       :	13
+2018-08-12 16:33:27,411 - log/train.log - INFO - seg_dim        :	20
+2018-08-12 16:33:27,411 - log/train.log - INFO - lstm_dim       :	100
+2018-08-12 16:33:27,411 - log/train.log - INFO - batch_size     :	20.0
+2018-08-12 16:33:27,411 - log/train.log - INFO - emb_file       :	wiki_100.utf8
+2018-08-12 16:33:27,411 - log/train.log - INFO - clip           :	5.0
+2018-08-12 16:33:27,411 - log/train.log - INFO - dropout_keep   :	0.5
+2018-08-12 16:33:27,411 - log/train.log - INFO - optimizer      :	adam
+2018-08-12 16:33:27,411 - log/train.log - INFO - lr             :	0.001
+2018-08-12 16:33:27,411 - log/train.log - INFO - tag_schema     :	iobes
+2018-08-12 16:33:27,411 - log/train.log - INFO - pre_emb        :	True
+2018-08-12 16:33:27,411 - log/train.log - INFO - zeros          :	False
+2018-08-12 16:33:27,411 - log/train.log - INFO - lower          :	True
+2018-08-12 16:33:29,932 - log/train.log - INFO - Created model with fresh parameters.
+2018-08-12 16:33:30,861 - log/train.log - INFO - Load pre-trained embedding.
+2018-08-12 16:33:30,861 - log/train.log - INFO - start training
+2018-08-12 16:33:43,108 - log/train.log - INFO - iteration:1 step:100/1044, NER loss:34.333855
+2018-08-12 16:33:54,612 - log/train.log - INFO - iteration:1 step:200/1044, NER loss:15.570418
+2018-08-12 16:34:05,985 - log/train.log - INFO - iteration:1 step:300/1044, NER loss:11.008352
+2018-08-12 16:34:16,431 - log/train.log - INFO - iteration:1 step:400/1044, NER loss: 8.512672
+2018-08-12 16:34:27,040 - log/train.log - INFO - iteration:1 step:500/1044, NER loss: 7.484519
+2018-08-12 16:34:39,871 - log/train.log - INFO - iteration:1 step:600/1044, NER loss:10.466527
+2018-08-12 16:34:50,401 - log/train.log - INFO - iteration:1 step:700/1044, NER loss: 5.979697
+2018-08-12 16:34:59,771 - log/train.log - INFO - iteration:1 step:800/1044, NER loss: 5.420953
+2018-08-12 16:35:10,818 - log/train.log - INFO - iteration:1 step:900/1044, NER loss: 5.727209
+2018-08-12 16:35:22,407 - log/train.log - INFO - iteration:1 step:1000/1044, NER loss: 5.910008
+2018-08-12 16:35:27,373 - log/train.log - INFO - evaluate:dev
+2018-08-12 16:35:30,387 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3491 phrases; correct: 2687.
+
+2018-08-12 16:35:30,387 - log/train.log - INFO - accuracy:  96.80%; precision:  76.97%; recall:  70.36%; FB1:  73.52
+
+2018-08-12 16:35:30,387 - log/train.log - INFO -               LOC: precision:  78.31%; recall:  74.22%; FB1:  76.21  1849
+
+2018-08-12 16:35:30,387 - log/train.log - INFO -               ORG: precision:  67.83%; recall:  61.28%; FB1:  64.39  889
+
+2018-08-12 16:35:30,387 - log/train.log - INFO -               PER: precision:  84.46%; recall:  71.95%; FB1:  77.70  753
+
+2018-08-12 16:35:30,464 - log/train.log - INFO - new best dev f1 score:73.520
+2018-08-12 16:35:30,765 - log/train.log - INFO - model saved
+2018-08-12 16:35:30,765 - log/train.log - INFO - evaluate:test
+2018-08-12 16:35:36,251 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7203 phrases; correct: 5539.
+
+2018-08-12 16:35:36,252 - log/train.log - INFO - accuracy:  96.73%; precision:  76.90%; recall:  71.87%; FB1:  74.30
+
+2018-08-12 16:35:36,252 - log/train.log - INFO -               LOC: precision:  78.19%; recall:  75.29%; FB1:  76.71  3522
+
+2018-08-12 16:35:36,252 - log/train.log - INFO -               ORG: precision:  67.54%; recall:  62.47%; FB1:  64.91  2021
+
+2018-08-12 16:35:36,252 - log/train.log - INFO -               PER: precision:  85.54%; recall:  76.18%; FB1:  80.59  1660
+
+2018-08-12 16:35:36,327 - log/train.log - INFO - new best test f1 score:74.300
+2018-08-12 16:35:41,776 - log/train.log - INFO - iteration:2 step:56/1044, NER loss: 4.786951
+2018-08-12 16:35:54,040 - log/train.log - INFO - iteration:2 step:156/1044, NER loss: 4.908854
+2018-08-12 16:36:05,579 - log/train.log - INFO - iteration:2 step:256/1044, NER loss: 4.384154
+2018-08-12 16:36:17,388 - log/train.log - INFO - iteration:2 step:356/1044, NER loss: 4.348581
+2018-08-12 16:36:28,242 - log/train.log - INFO - iteration:2 step:456/1044, NER loss: 4.033630
+2018-08-12 16:36:38,481 - log/train.log - INFO - iteration:2 step:556/1044, NER loss: 3.768729
+2018-08-12 16:36:50,132 - log/train.log - INFO - iteration:2 step:656/1044, NER loss: 3.890114
+2018-08-12 16:37:01,366 - log/train.log - INFO - iteration:2 step:756/1044, NER loss: 3.427970
+2018-08-12 16:37:11,300 - log/train.log - INFO - iteration:2 step:856/1044, NER loss: 3.113904
+2018-08-12 16:37:22,526 - log/train.log - INFO - iteration:2 step:956/1044, NER loss: 3.268834
+2018-08-12 16:37:32,241 - log/train.log - INFO - evaluate:dev
+2018-08-12 16:37:35,172 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3631 phrases; correct: 3059.
+
+2018-08-12 16:37:35,173 - log/train.log - INFO - accuracy:  97.53%; precision:  84.25%; recall:  80.10%; FB1:  82.12
+
+2018-08-12 16:37:35,173 - log/train.log - INFO -               LOC: precision:  87.35%; recall:  81.39%; FB1:  84.27  1818
+
+2018-08-12 16:37:35,173 - log/train.log - INFO -               ORG: precision:  75.38%; recall:  75.91%; FB1:  75.65  991
+
+2018-08-12 16:37:35,173 - log/train.log - INFO -               PER: precision:  88.08%; recall:  81.90%; FB1:  84.88  822
+
+2018-08-12 16:37:35,237 - log/train.log - INFO - new best dev f1 score:82.120
+2018-08-12 16:37:35,426 - log/train.log - INFO - model saved
+2018-08-12 16:37:35,426 - log/train.log - INFO - evaluate:test
+2018-08-12 16:37:40,961 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7426 phrases; correct: 6169.
+
+2018-08-12 16:37:40,961 - log/train.log - INFO - accuracy:  97.51%; precision:  83.07%; recall:  80.04%; FB1:  81.53
+
+2018-08-12 16:37:40,961 - log/train.log - INFO -               LOC: precision:  86.60%; recall:  81.08%; FB1:  83.75  3425
+
+2018-08-12 16:37:40,961 - log/train.log - INFO -               ORG: precision:  73.24%; recall:  74.65%; FB1:  73.93  2227
+
+2018-08-12 16:37:40,961 - log/train.log - INFO -               PER: precision:  88.61%; recall:  84.33%; FB1:  86.42  1774
+
+2018-08-12 16:37:41,025 - log/train.log - INFO - new best test f1 score:81.530
+2018-08-12 16:37:42,158 - log/train.log - INFO - iteration:3 step:12/1044, NER loss: 3.221446
+2018-08-12 16:37:53,264 - log/train.log - INFO - iteration:3 step:112/1044, NER loss: 2.871194
+2018-08-12 16:38:05,114 - log/train.log - INFO - iteration:3 step:212/1044, NER loss: 3.014526
+2018-08-12 16:38:15,781 - log/train.log - INFO - iteration:3 step:312/1044, NER loss: 2.476562
+2018-08-12 16:38:27,686 - log/train.log - INFO - iteration:3 step:412/1044, NER loss: 2.661584
+2018-08-12 16:38:40,507 - log/train.log - INFO - iteration:3 step:512/1044, NER loss: 2.970206
+2018-08-12 16:38:52,427 - log/train.log - INFO - iteration:3 step:612/1044, NER loss: 2.307939
+2018-08-12 16:39:03,575 - log/train.log - INFO - iteration:3 step:712/1044, NER loss: 2.373620
+2018-08-12 16:39:13,377 - log/train.log - INFO - iteration:3 step:812/1044, NER loss: 2.139396
+2018-08-12 16:39:24,329 - log/train.log - INFO - iteration:3 step:912/1044, NER loss: 2.334482
+2018-08-12 16:39:34,459 - log/train.log - INFO - iteration:3 step:1012/1044, NER loss: 1.989815
